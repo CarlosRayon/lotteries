@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lotteries
+{% endblock %}
+
+{% block body %}
+
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px;
+            text-align: center;
+            background-color: lightblue;
+        }
+    </style>
+    <div class="container">
+        <h1>{{result}}</h1>
+        <h2>{{ posibleCombination |join(' | ') }}</h2>
+    </div>
+
+{% endblock %}
